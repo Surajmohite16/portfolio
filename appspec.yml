@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: / # The root of the CodeBuild artifact
+    destination: /tmp/codedeploy-files # A temporary folder on the EC2 instance
+hooks:
+  # This hook runs after the application bundle is downloaded to the instance
+  AfterInstall:
+    - location: deploy.sh
+      timeout: 300
+      runas: root # Run as root to execute docker commands

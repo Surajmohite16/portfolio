@@ -1,1 +1,1 @@
-https://surajmohite16.github.io/portFolio
+https://surajmohite16.github.io/portfolio

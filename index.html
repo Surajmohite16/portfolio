@@ -1,351 +1,154 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suraj Mohite</title>
-    
-    <link rel="icon" type="image/png" href="assets/images/cloud-computing.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suraj Mohite | Cloud Engineer</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <div class="social-sidebar">
-        <a href="https://www.linkedin.com/in/surajmohite-cloud-devops-engineer" target="_blank" class="social-icon">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/Surajmohite16" target="_blank" class="social-icon">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:surajmohite405@gmail.com" class="social-icon">
-            <i class="fas fa-envelope"></i>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" class="social-icon">
-            <i class="fab fa-instagram"></i>
-        </a>
+<header class="navbar">
+  <h1 class="logo">SM</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<!-- HERO -->
+<section class="hero fade-up">
+  <div class="hero-text">
+    <h2>Suraj Mohite</h2>
+
+    <!-- Typing animation -->
+    <h3>
+      <span id="typing"></span>
+    </h3>
+
+    <p>
+      Designing, automating, and optimizing scalable AWS cloud infrastructure
+      with DevOps best practices.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="assets/Suraj_Mohite_Resume.pdf" class="btn outline" download>
+        Download Resume
+      </a>
     </div>
-    <div id="particles-js"></div>
+  </div>
 
-    <header>
-        <nav class="navbar">
-            <a href="#" class="nav-logo">Suraj Mohite</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-right">
-                <button id="theme-toggle" class="theme-toggle-button">
-                    <i class="fas fa-sun"></i> </button>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <div class="hero-image">
+    <img src="assets/profile.png" alt="Suraj Mohite">
+  </div>
+</section>
 
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-content">
-                <p class="greeting">Hello, I'm</p>
-                <h1>Suraj Mohite</h1>
-                <p class="subtitle">Senior AWS Cloud Engineer</p>
-                <p>Building Secure, Scalable, Reliable, and Automated AWS Cloud Infrastructure.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="cta-button primary">View My Projects</a>
-                    <a href="#contact" class="cta-button secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/profile-pic.jpeg" alt="Your Profile Picture">
-            </div>
-        </section>
+<!-- ABOUT -->
+<section id="about" class="section fade-up">
+  <h2>About Me</h2>
+  <p>
+    I am a Cloud Engineer with strong experience in AWS, Linux, CI/CD pipelines,
+    monitoring, logging, and infrastructure automation. I focus on building
+    secure, scalable, and cost-optimized cloud solutions.
+  </p>
+</section>
 
-        <section id="about" class="content-section">
-            <div class="container">
-                <h2>About Me</h2>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I am a dedicated Senior AWS Cloud Engineer with a passion for automating processes, optimizing cloud resources, and building robust, fault-tolerant systems. My expertise lies in designing, implementing, and managing solutions across the entire software development lifecycle, leveraging a wide array of AWS services and modern DevOps tools.</p>
-                        <p>With 3+ of experience, I thrive in environments where I can apply my skills in infrastructure as code (IaC), CI/CD pipelines, containerization, and monitoring to deliver efficient and cost-effective cloud solutions.</p>
-                        <a href="your_resume.pdf" target="_blank" class="cta-button small">Download Resume <i class="fas fa-download"></i></a>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3 data-target="3">0+</h3>
-                            <p>Years of Experience</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 data-target="100">0+</h3>
-                            <p>Projects Managing</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3 data-target="3">0+</h3>
-                            <p>AWS Certifications</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- SKILLS -->
+<section id="skills" class="section fade-up">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill">AWS</div>
+    <div class="skill">Linux</div>
+    <div class="skill">Docker</div>
+    <div class="skill">Kubernetes</div>
+    <div class="skill">Terraform</div>
+    <div class="skill">CI/CD</div>
+    <div class="skill">GitHub Actions</div>
+    <div class="skill">NGINX</div>
+    <div class="skill">CloudWatch</div>
+    <div class="skill">Python</div>
+  </div>
+</section>
 
-        <section id="skills" class="content-section tech-skills-section">
-            <div class="container">
-                <h2>Technical Skills</h2>
-                <div class="skills-category">
-                    <h3>AWS Services</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=EC2" alt="EC2 Icon">
-                            <span>EC2</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=S3" alt="S3 Icon">
-                            <span>S3</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=VPC" alt="VPC Icon">
-                            <span>VPC</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Lambda" alt="Lambda Icon">
-                            <span>Lambda</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=RDS" alt="RDS Icon">
-                            <span>RDS</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=IAM" alt="IAM Icon">
-                            <span>IAM</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=EKS" alt="EKS Icon">
-                            <span>EKS</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=CloudFormation" alt="CloudFormation Icon">
-                            <span>CloudFormation</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills-category">
-                    <h3>DevOps Tools & Concepts</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Docker" alt="Docker Icon">
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Kubernetes" alt="Kubernetes Icon">
-                            <span>Kubernetes</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Jenkins" alt="Jenkins Icon">
-                            <span>Jenkins</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Terraform" alt="Terraform Icon">
-                            <span>Terraform</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Ansible" alt="Ansible Icon">
-                            <span>Ansible</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Git" alt="Git Icon">
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Prometheus" alt="Prometheus Icon">
-                            <span>Prometheus</span>
-                        </div>
-                        <div class="skill-item">
-                            <img src="https://via.placeholder.com/60?text=Grafana" alt="Grafana Icon">
-                            <span>Grafana</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- PROJECTS -->
+<section id="projects" class="section fade-up">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <h3>AWS Infrastructure Automation</h3>
+      <p>
+        Automated AWS infrastructure using Terraform including EC2, ALB,
+        Auto Scaling, IAM, and CloudWatch.
+      </p>
+    </div>
 
-        <section id="projects" class="content-section">
-            <div class="container">
-                <h2>My Projects</h2>
-                <div class="project-grid">
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/500x300?text=Project+1+Image" alt="Project One">
-                        <div class="project-info">
-                            <h3>Serverless Web App on AWS</h3>
-                            <p>Built a scalable serverless web application using AWS Lambda, API Gateway, DynamoDB, and S3. Implemented CI/CD with CodePipeline.</p>
-                            <div class="project-tags">
-                                <span>AWS Lambda</span><span>API Gateway</span><span>DynamoDB</span><span>S3</span><span>CI/CD</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/500x300?text=Project+2+Image" alt="Project Two">
-                        <div class="project-info">
-                            <h3>Kubernetes Cluster Deployment</h3>
-                            <p>Automated deployment of a highly available Kubernetes cluster on AWS EKS using Terraform. Configured Prometheus and Grafana for monitoring.</p>
-                            <div class="project-tags">
-                                <span>Kubernetes</span><span>EKS</span><span>Terraform</span><span>Prometheus</span><span>Grafana</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/500x300?text=Project+3+Image" alt="Project Three">
-                        <div class="project-info">
-                            <h3>Automated Infrastructure with Ansible</h3>
-                            <p>Developed Ansible playbooks to provision and configure EC2 instances, install dependencies, and deploy applications automatically.</p>
-                            <div class="project-tags">
-                                <span>Ansible</span><span>EC2</span><span>Bash Scripting</span><span>Linux</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/500x300?text=Project+3+Image" alt="Project Three">
-                        <div class="project-info">
-                            <h3>Automated Infrastructure with Terraform</h3>
-                            <p>Developed Ansible playbooks to provision and configure EC2 instances, install dependencies, and deploy applications automatically.</p>
-                            <div class="project-tags">
-                                <span>Ansible</span><span>EC2</span><span>Bash Scripting</span><span>Linux</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/500x300?text=Project+3+Image" alt="Project Three">
-                        <div class="project-info">
-                            <h3>Automated Infrastructure with CloudFormation</h3>
-                            <p>Developed Ansible playbooks to provision and configure EC2 instances, install dependencies, and deploy applications automatically.</p>
-                            <div class="project-tags">
-                                <span>Ansible</span><span>EC2</span><span>Bash Scripting</span><span>Linux</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://via.placeholder.com/500x300?text=Project+3+Image" alt="Project Three">
-                        <div class="project-info">
-                            <h3>Automated Infrastructure with Lambda</h3>
-                            <p>Developed Ansible playbooks to provision and configure EC2 instances, install dependencies, and deploy applications automatically.</p>
-                            <div class="project-tags">
-                                <span>Ansible</span><span>EC2</span><span>Bash Scripting</span><span>Linux</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="project-card">
+      <h3>CI/CD Pipeline Implementation</h3>
+      <p>
+        Designed GitHub Actions pipelines for build, test, and deployment
+        with zero-downtime strategies.
+      </p>
+    </div>
 
-        <section id="experience" class="content-section">
-            <div class="container">
-                <h2>Experience & Certifications</h2>
-                <div class="experience-grid">
-                    <div class="timeline">
-                        <h3>Work Experience</h3>
-                        <div class="timeline-item">
-                            <h4>Senior Cloud Engineer<br>@Hostin Services Pvt. Ltd. (cloud.in)</h4>
-                            <span>April 2022 - Present</span>
-                            <ul>
-                                <li>Designed, deployed, and managed highly available AWS infrastructure (VPC, EC2, ALB, S3, RDS); led cloud migrations using AWS MGN and DMS.</li>
-                                <li>Automated provisioning (Terraform, Lambda), CI/CD (Jenkins, CodePipeline), and DR; established Terraform remote state (S3/DynamoDB) for teams.</li>
-                                <li>Enhanced AWS security (WAF, GuardDuty, Inspector) and strengthened system security (patching, hardening, SELinux, log analysis).</li>
-                                <li>Configured proactive monitoring (CloudWatch, Prometheus, Grafana) and optimized cloud costs (S3 lifecycle policies, storage management).</li>
-                                <li>Administered Linux/Windows servers (LVM, firewalld, cron) and web servers (Apache/Nginx/IIS, SSL); managed databases (MongoDB, MySQL, MSSQL).</li>
-                                <li>Mentored engineers on cloud/Kubernetes (PoCs) and collaborated with stakeholders to drive continuous improvement and incident remediation.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="certifications">
-                        <h3>Certifications</h3>
-                        <div class="certification-item">
-                            <div class="cert-details">
-                                <h4>AWS Certified Solutions Architect – Associate (SAA-C03)</h4>
-                                <p>Issued: [Month Year] | <a href="#" target="_blank">Verify Credential <i class="fas fa-external-link-alt"></i></a></p>
-                            </div>
-                            <img src="assets/images/aws-certified-solutions-architect-associate.png" alt="AWS Certified Solutions Architect - Associate Badge" class="cert-badge-image">
-                        </div>
-                        <div class="certification-item">
-                            <div class="cert-details">
-                                <h4>AWS Certified Cloud Practitioner<br>(CLF-C01)</h4>
-                                <p>Issued: [Month Year] | <a href="#" target="_blank">Verify Credential <i class="fas fa-external-link-alt"></i></a></p>
-                            </div>
-                            <img src="assets/images/aws-certified-cloud-practitioner.png" alt="AWS Certified DevOps Engineer - Professional Badge" class="cert-badge-image">
-                        </div>
-                        <div class="certification-item">
-                            <div class="cert-details">
-                                <h4>AWS Certified AI Practitioner (AIF-C01)</h4>
-                                <p>Issued: [Month Year] | <a href="#" target="_blank">Verify Credential <i class="fas fa-external-link-alt"></i></a></p>
-                            </div>
-                            <img src="assets/images/aws-certified-ai-practitioner.png" alt="Certified Kubernetes Administrator Badge" class="cert-badge-image">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="project-card">
+      <h3>Monitoring & Logging</h3>
+      <p>
+        Centralized logging using CloudWatch, ELK stack, and alerting
+        for proactive incident response.
+      </p>
+    </div>
+  </div>
+</section>
 
-        <section id="contact" class="content-section">
-            <div class="container">
-                <h2>Get In Touch</h2>
-                <p class="contact-intro">I'm always open to discussing new projects, job opportunities, or collaborations.<br>Feel free to send me a message!</p>
-                
-                <p style="text-align: center; margin-bottom: 2rem;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--accent-color); font-size: 1.3rem;"></i> Pune, India</p>
+<!-- EXPERIENCE -->
+<section id="experience" class="section fade-up">
+  <h2>Experience</h2>
 
-                <div class="contact-info">
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:surajmohite405@gmail.com">surajmohite405@gmail.com</a></p>
-                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/surajmohite-cloud-devops-engineer" target="_blank">LinkedIn Profile</a></p>
-                    <p><i class="fab fa-github"></i> <a href="https://github.com/Surajmohite16" target="_blank">GitHub Profile</a></p>
-                </div>
-                <form id="contact-form">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-                    <button type="submit" class="cta-button primary">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
+  <div class="timeline-item">
+    <span class="year">2023 – Present</span>
+    <h3>Cloud Engineer</h3>
+    <p>
+      Managing AWS infrastructure, improving reliability,
+      cost optimization, security hardening, and automation.
+    </p>
+  </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Suraj Mohite. Built with <i class="fas fa-heart"></i> and code.</p>        
-        </div>
-    </footer>
+  <div class="timeline-item">
+    <span class="year">2021 – 2023</span>
+    <h3>System / DevOps Engineer</h3>
+    <p>
+      Linux server administration, CI/CD automation,
+      monitoring, and high availability solutions.
+    </p>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="script.js"></script>
+<!-- CONTACT -->
+<section id="contact" class="section contact fade-up">
+  <h2>Contact Me</h2>
+  <p>Email: <a href="mailto:surajmohite16@gmail.com">surajmohite16@gmail.com</a></p>
+  <p>Location: India</p>
 
+  <div class="socials">
+    <a href="https://github.com/surajmohite16" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Suraj Mohite | Cloud Engineer</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
